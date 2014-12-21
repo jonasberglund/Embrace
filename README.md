@@ -239,7 +239,7 @@ The following code was implemented on the BeagleBoard to run our program:
 
         sleep(del);
         send_buzz();
-}
+	}
 
 	void send_hug(){
         printf("send hug\n"); //Debug
