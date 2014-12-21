@@ -5,6 +5,11 @@ The following is the technical documentetain for the project *Embrace*, develope
 	Plastic Logic’s Display Evaluation Kit 
 	Small Display Evaluation Kit 
 	PLDEK_BNE-HBZ1.3 
+	8 Rechargeable AA Batteries (Ni-MH) 
+	1 Vibe Motor
+	1 Flexinol Wire (0.2mm)
+	1 Transistor TP121
+	1 Resistance (1Kohm)
 
 ##Connecting to the beagleboard
 Install drivers found on [http://beagleboard.org/getting-started](http://beagleboard.org/getting-started) for your operating system.
@@ -307,3 +312,11 @@ The following code was implemented on the BeagleBoard to run our program:
 
         system(black_image_path); //Set black image on device
 	}
+	
+##Hardware connections
+It was programmed to send the heartbeat, buzzing and hug signals to the digital outputs Pin 30 and 39 of the microcontroller, which are connected as follow:
+
+- PIN 39: The vibe motor (which gives the vibration of the buzzing and heartbeat) it is connected to this digital output and to ground. As the output sends 3v when it is high, there is no need of a resistance to protect the vibe motor. 
+- PIN30: The flexinol wire (0.2mm) needs 1.5A of current and 3v to be activated (contract itself), the microcontroller does not provides a current that high, so we use a transistor (TP121) to control the activation of the flexinol wire and this one is connected to an external power supply (4 AA batteries = 6v). There is a resistance of 1kohm  connected to the digital output to protect the microcontroller. (See figure below)
+
+![](https://www.dropbox.com/s/yqedrmhs4a6niyw/6.jpeg?dl=1)
