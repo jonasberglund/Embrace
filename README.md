@@ -1,5 +1,4 @@
 #Embrace
-====
 The following is the technical documentetain for the project *Embrace*, developed during the Tangbile Interaction course at the Interaction Design master program at Chalmers University of Technology.
 
 ##Connecting to the beagleboard
