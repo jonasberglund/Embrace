@@ -2,8 +2,9 @@
 The following is the technical documentetain for the project *Embrace*, developed during the Tangbile Interaction course at the Interaction Design master program at Chalmers University of Technology.
 
 ##Hardware
-Plastic Logic’s Display Evaluation Kit 
-Small Display Evaluation Kit PLDEK_BNE-HBZ1.3 
+	Plastic Logic’s Display Evaluation Kit 
+	Small Display Evaluation Kit 
+	PLDEK_BNE-HBZ1.3 
 
 ##Connecting to the beagleboard
 Install drivers found on [http://beagleboard.org/getting-started](http://beagleboard.org/getting-started) for your operating system.
