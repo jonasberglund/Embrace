@@ -23,11 +23,11 @@ When running Windows it was possible to run the the following command whenever t
 
 After booting the following message will show. You’ll be able to log in with “root”.
 
-![](https://www.dropbox.com/s/klxnf557nrn0uxz/1.png?dl=1)
+![](https://www.dropbox.com/s/y1ug4rl6iwt36lc/1.png?dl=1)
 
 ##Upload your own pictures
 Either you connect to the beaglebone via FTP or you could insert the SD-card into your computer. Whatever you choose to do you should be able to navigate to the “/mnt/data/img/” path. Here is where the “slideshow-’” scripts pick their pictures from. You could create your own folder or just replace the images you want to show. (For your own program its only important to remember the path to where you placed your own images). Here, depending on the screen size of the display you connect the slideshow will choose different folders.
-![](https://www.dropbox.com/s/8uhqgpcwd8jdp7n/3.png?dl=1)
+![](https://www.dropbox.com/s/pj1wen58n5l24y7/3.png?dl=1)
 
 ##Running slideshow
 Located in the path 
@@ -36,7 +36,7 @@ Located in the path
 	
 there is a few shell scripts that can be run directly from the console. These are standard scripts that can start/stop the slideshow. You can run them by just typing the name of the file.
 
-![](https://www.dropbox.com/s/wjifsb7hlkzsu1u/2.png?dl=1)
+![](https://www.dropbox.com/s/643eb7l4tgxee0q/2.png?dl=1)
   
 ##C code
 ###Including IOLIB
@@ -137,12 +137,12 @@ As an addition to the tutorial you could also try to run
 		
 and if successful you should see something like this:
 
-![](https://www.dropbox.com/s/b0tbkbjeeslyzn3/4.png?dl=1)
+![](https://www.dropbox.com/s/uk8z55p6jgojszv/4.png?dl=1)
 
 ##Errors
 If you run in to this errors, as we did a few times. 
 
-![](https://www.dropbox.com/s/k195miogb94wlev/5.png?dl=1)
+![](https://www.dropbox.com/s/g8s858wz8qg98h8/5.png?dl=1)
 
 	make clean
 	
@@ -319,4 +319,4 @@ It was programmed to send the heartbeat, buzzing and hug signals to the digital 
 - PIN 39: The vibe motor (which gives the vibration of the buzzing and heartbeat) it is connected to this digital output and to ground. As the output sends 3v when it is high, there is no need of a resistance to protect the vibe motor. 
 - PIN30: The flexinol wire (0.2mm) needs 1.5A of current and 3v to be activated (contract itself), the microcontroller does not provides a current that high, so we use a transistor (TP121) to control the activation of the flexinol wire and this one is connected to an external power supply (4 AA batteries = 6v). There is a resistance of 1kohm  connected to the digital output to protect the microcontroller. (See figure below)
 
-![](https://www.dropbox.com/s/yqedrmhs4a6niyw/6.jpeg?dl=1)
+![](https://www.dropbox.com/s/fof95pinrkvvcn3/6.jpeg?dl=1)
